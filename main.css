@@ -262,3 +262,136 @@ nav{
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+
+/* #### about us #### */
+.about{
+  min-height: 100vh;
+  padding: 100px 0;
+  background: url('img/about-bcg.jpg')center/cover fixed no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-card{
+  background: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.about-card h3{
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+.about-card .fa-car{
+  font-size: 60px;
+  color: #db996c;
+  margin: 20px 0;
+}
+
+.about-card p{
+  line-height: 2;
+}
+
+@media screen and (min-width: 776px){
+  .about-card{
+    max-width: 50%;
+    border-radius: 30px;
+  }
+
+  .about-card p{
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
+
+/* #### filler #### */
+.filler{
+  min-height: 60vh;
+  background: url('img/filler-bcg.jpeg')center/cover fixed no-repeat;
+}
+
+/* #### contact #### */
+.contact{
+  min-height: 80vh;
+  background: url('img/about-bcg.jpg')center/cover fixed no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-card{
+  flex: 0 0 80%;
+  padding: 40px 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form{
+  flex: 0 0 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+form input{
+  margin: 10px 0;
+}
+
+form h3{
+  text-align: center;
+  text-transform: uppercase;
+  color: #db996c;
+}
+
+form input,
+form textarea{
+  padding: 5px;
+  border: 3px solid #db996c;
+}
+
+input::placeholder,
+textarea::placeholder{
+  text-transform: uppercase;
+  color: #0d1317;
+}
+
+.form-btn{
+  margin: 20px;
+  font-size: 20px;
+  border-radius: 40px;
+  padding: 5px;
+  background: #db996c;
+  color: #fcf8f3;
+  transition: color 1s ease-in-out, background 1s ease-in-out;
+}
+
+.form-btn:hover{
+  background: #fcf8f3;
+  color: #db996c;
+}
+
+/* #### footer #### */
+footer{
+  background: #0d1317;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.footer-icons a{
+  display: inline-block;
+  font-size: 30px;
+  margin: 0 10px 20px 10px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  background: #fcf8f3;
+  color: #0d1317;
+}
+
+footer p{
+  color: #fcf8f3;
+  font-size: 20px;
+}
